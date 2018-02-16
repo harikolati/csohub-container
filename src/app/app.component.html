@@ -1,0 +1,23 @@
+<div class="container-fluid" style="height:90%">
+  <!-- begin: header component -->
+  <app-header class="clearfix"></app-header>
+  <!-- end: header component -->
+  
+  <div class="row">
+    <!-- begin: left navigation component -->
+   <app-sidebar></app-sidebar>
+  <!-- end: left navigation component -->
+  <div class="col-sm-8 right-main-content">
+    <app-announcement></app-announcement>
+    <!-- begin: body component-->
+    <router-outlet></router-outlet>
+    <!-- end: body component-->
+  </div>
+  </div>
+</div>
+
+<div >
+  <!-- begin: legal footer -->
+   <app-footer></app-footer>
+  <!-- end: legal footer -->
+</div>
